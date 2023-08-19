@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>geometry genius</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        <header class="m-12">
+            <!-- container -->
+            <div class=" flex items-center bg-[#e7f4fb] px-10 py-4 rounded-lg">
+                <!-- left side  -->
+                <div class=" flex-1">
+                    <h2 class="font-bold text-3xl text-[#3C3E40]">
+                        Interactive
+                    </h2>
+                    <p class=" text-2xl text-[#747a7D]">
+                        Geometry Genius
+                    </p>
+                </div>
+                <!-- right side   -->
+
+                <div>
+                    <button class="text-white bg-[#1090d8] py-2 px-10 rounded-md font-semibold">Blog</button>
+                </div>
+            </div>
+        </header>
+        <main class="m-12">
+            <!-- left side cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 1st card  -->
+                <div class="card bg-base-100 shadow-md rounded-md p-5 hover:bg-sky-50">
+                    <figure><img src="./images/triangle.png" alt="Triangle" /></figure>
+                    <div class="card-body text-center p-2">
+                        <h3 class="font-bold text-xl text-[#3C3E40]">Triangle</h3>
+                        <p class="text-[#747a7D]">Area (A) = 0.5 x b x h</p>
+                        <div class="flex items-center justify-center gap-x-4">
+                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="b">
+                            <span class="text-[#747a7d]"> cm </span>
+                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="h">
+                            <span class="text-[#747a7d]"> cm </span>
+                        </div>
+                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area">    0  </span><span>cm<sup>2</sup></span></p>
+                        <button class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
+                    </div>
+                </div>
+                <!-- 2nd card  -->
+                <div class="card bg-base-100 shadow-md rounded-md p-5 hover:bg-sky-50">
+                    <figure><img src="./images/rectangle.png" alt="Rectangle" /></figure>
+                    <div class="card-body text-center p-2">
+                        <h3 class="font-bold text-xl text-[#3C3E40]">Rectangle</h3>
+                        <p class="text-[#747a7D]">Area (A) = w  x  l</p>
+                        <div class="flex items-center justify-center gap-x-4">
+                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="w">
+                            <span class="text-[#747a7d]"> cm </span>
+                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="l">
+                            <span class="text-[#747a7d]"> cm </span>
+                        </div>
+                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area">    0  </span><span>cm<sup>2</sup></span></p>
+                        <button class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
+                    </div>
+                </div>
+                <!-- 3rd card  -->
+                <div class="card bg-base-100 shadow-md rounded-md p-5 hover:bg-sky-50">
+                    <figure><img src="./images/parallelogram.png" alt="Parallelogram" /></figure>
+                    <div class="card-body text-center p-2">
+                        <h3 class="font-bold text-xl text-[#3C3E40]">Parallelogram</h3>
+                        <p class="text-[#747a7D]">Area (A) = b x h</p>
+                        <div class="flex items-center justify-center gap-x-4">
+                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="b">
+                            <span class="text-[#747a7d]"> cm </span>
+                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="h">
+                            <span class="text-[#747a7d]"> cm </span>
+                        </div>
+                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area">    0  </span><span>cm<sup>2</sup></span></p>
+                        <button class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
+                    </div>
+                </div>
+                <!-- 4th card  -->
+                <div class="card bg-base-100 shadow-md rounded-md p-5 hover:bg-sky-50">
+                    <figure><img src="./images/triangle.png" alt="Rhombus" /></figure>
+                    <div class="card-body text-center p-2">
+                        <h3 class="font-bold text-xl text-[#3C3E40]">Rhombus</h3>
+                        <p class="text-[#747a7D]">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                        <div class="flex items-center justify-center gap-x-4">
+                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="d₁">
+                            <span class="text-[#747a7d]"> cm </span>
+                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="d₂">
+                            <span class="text-[#747a7d]"> cm </span>
+                        </div>
+                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area">    0  </span><span>cm<sup>2</sup></span></p>
+                        <button class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
+                    </div>
+                </div>
+                <!-- 5th card  -->
+                <div class="card bg-base-100 shadow-md rounded-md p-5 hover:bg-sky-50">
+                    <figure><img src="./images/pentagon.png" alt="Pentagon" /></figure>
+                    <div class="card-body text-center p-2">
+                        <h3 class="font-bold text-xl text-[#3C3E40]">Pentagon</h3>
+                        <p class="text-[#747a7D]">Area (A) = 0.5 x p x b</p>
+                        <div class="flex items-center justify-center gap-x-4">
+                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="p">
+                            <span class="text-[#747a7d]"> cm </span>
+                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="b">
+                            <span class="text-[#747a7d]"> cm </span>
+                        </div>
+                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area">    0  </span><span>cm<sup>2</sup></span></p>
+                        <button class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
+                    </div>
+                </div>
+                <!-- 6th card  -->
+                <div class="card bg-base-100 shadow-md rounded-md p-5 hover:bg-sky-50">
+                    <figure><img src="./images/ellipse.png" alt="Ellipse" /></figure>
+                    <div class="card-body text-center p-2">
+                        <h3 class="font-bold text-xl text-[#3C3E40]">Ellipse</h3>
+                        <p class="text-[#747a7D]">Area (A) = πab</p>
+                        <div class="flex items-center justify-center gap-x-4">
+                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="a">
+                            <span class="text-[#747a7d]"> cm </span>
+                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="b">
+                            <span class="text-[#747a7d]"> cm </span>
+                        </div>
+                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area">    0  </span><span>cm<sup>2</sup></span></p>
+                        <button class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
+                    </div>
+                </div>
+            
+            </div>
+        </main>
+    </body>
+
+</html>
