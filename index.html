@@ -34,18 +34,18 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- 1st card  -->
                 <div class="card bg-base-100 shadow-md rounded-md p-5 hover:bg-sky-50">
-                    <figure><img src="./images/triangle.png" alt="Triangle" /></figure>
+                    <figure class="w-[200px] mx-auto"><img src="./images/triangle.png" alt="Triangle" /></figure>
                     <div class="card-body text-center p-2">
                         <h3 class="font-bold text-xl text-[#3C3E40]">Triangle</h3>
                         <p class="text-[#747a7D]">Area (A) = 0.5 x b x h</p>
                         <div class="flex items-center justify-center gap-x-4">
-                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="b">
+                            <input id="triangle1"class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="b">
                             <span class="text-[#747a7d]"> cm </span>
-                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="h">
+                            <input id="triangle2" class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="h">
                             <span class="text-[#747a7d]"> cm </span>
                         </div>
-                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area">    0  </span><span>cm<sup>2</sup></span></p>
-                        <button class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
+                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area1">    0  </span><span> cm<sup>2</sup></span></p>
+                        <button id="triangle-btn" class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
                     </div>
                 </div>
                 <!-- 2nd card  -->
@@ -55,13 +55,13 @@
                         <h3 class="font-bold text-xl text-[#3C3E40]">Rectangle</h3>
                         <p class="text-[#747a7D]">Area (A) = w  x  l</p>
                         <div class="flex items-center justify-center gap-x-4">
-                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="w">
+                            <input id="rectangle1" class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="w">
                             <span class="text-[#747a7d]"> cm </span>
-                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="l">
+                            <input id="rectangle2" class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="l">
                             <span class="text-[#747a7d]"> cm </span>
                         </div>
-                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area">    0  </span><span>cm<sup>2</sup></span></p>
-                        <button class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
+                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area2">    0  </span><span> cm<sup>2</sup></span></p>
+                        <button id="rectangle-btn" class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
                     </div>
                 </div>
                 <!-- 3rd card  -->
@@ -71,29 +71,29 @@
                         <h3 class="font-bold text-xl text-[#3C3E40]">Parallelogram</h3>
                         <p class="text-[#747a7D]">Area (A) = b x h</p>
                         <div class="flex items-center justify-center gap-x-4">
-                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="b">
+                            <input id="parallelogram1" class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="b">
                             <span class="text-[#747a7d]"> cm </span>
-                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="h">
+                            <input id="parallelogram2" class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="h">
                             <span class="text-[#747a7d]"> cm </span>
                         </div>
-                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area">    0  </span><span>cm<sup>2</sup></span></p>
-                        <button class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
+                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area3">    0  </span><span> cm<sup>2</sup></span></p>
+                        <button id="parallelogram-btn" class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
                     </div>
                 </div>
                 <!-- 4th card  -->
                 <div class="card bg-base-100 shadow-md rounded-md p-5 hover:bg-sky-50">
-                    <figure><img src="./images/triangle.png" alt="Rhombus" /></figure>
+                    <figure><img src="./images/rhombus.png" alt="Rhombus" /></figure>
                     <div class="card-body text-center p-2">
                         <h3 class="font-bold text-xl text-[#3C3E40]">Rhombus</h3>
                         <p class="text-[#747a7D]">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                         <div class="flex items-center justify-center gap-x-4">
-                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="d₁">
+                            <input id="rhombus1" class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="d₁">
                             <span class="text-[#747a7d]"> cm </span>
-                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="d₂">
+                            <input id="rhombus2" class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="d₂">
                             <span class="text-[#747a7d]"> cm </span>
                         </div>
-                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area">    0  </span><span>cm<sup>2</sup></span></p>
-                        <button class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
+                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area4">    0  </span><span> cm<sup>2</sup></span></p>
+                        <button id="rhombus-btn" class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
                     </div>
                 </div>
                 <!-- 5th card  -->
@@ -103,13 +103,13 @@
                         <h3 class="font-bold text-xl text-[#3C3E40]">Pentagon</h3>
                         <p class="text-[#747a7D]">Area (A) = 0.5 x p x b</p>
                         <div class="flex items-center justify-center gap-x-4">
-                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="p">
+                            <input id="pentagon1" class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="p">
                             <span class="text-[#747a7d]"> cm </span>
-                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="b">
+                            <input id="pentagon2"  class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="b">
                             <span class="text-[#747a7d]"> cm </span>
                         </div>
-                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area">    0  </span><span>cm<sup>2</sup></span></p>
-                        <button class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
+                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area5">    0  </span><span> cm<sup>2</sup></span></p>
+                        <button id="pentagon-btn" class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
                     </div>
                 </div>
                 <!-- 6th card  -->
@@ -119,18 +119,20 @@
                         <h3 class="font-bold text-xl text-[#3C3E40]">Ellipse</h3>
                         <p class="text-[#747a7D]">Area (A) = πab</p>
                         <div class="flex items-center justify-center gap-x-4">
-                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="a">
+                            <input id="ellipse1"  class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="a">
                             <span class="text-[#747a7d]"> cm </span>
-                            <input class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="b">
+                            <input id="ellipse2"  class=" w-1/4 px-2 py-1 rounded-md bg-sky-100 foucs: outline-none placeholder:text-sky-400" type="number" placeholder="b">
                             <span class="text-[#747a7d]"> cm </span>
                         </div>
-                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area">    0  </span><span>cm<sup>2</sup></span></p>
-                        <button class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
+                        <p  class="text-left my-5 text-[#747a7d]">Area Calculation : <span id="area6">    0  </span><span> cm<sup>2</sup></span></p>
+                        <button id="ellipse-btn" class="btn text-white font-semibold bg-[#1090D8]  mb-10 hover:bg-[#1090D8]">Calculate</button>
                     </div>
                 </div>
             
             </div>
         </main>
+        <script src="./js/functions.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 
 </html>
